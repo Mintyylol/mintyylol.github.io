@@ -7,4 +7,4 @@ all i did was go through the images and rename them all 👍
 i hope you enjoy the website as much as i do c:
 
 
-P.S. we stole a lot of the code from [raccoons.pictures](https://raccoons.pictures), and theres some code from that website still in the code. thanks for the code 
+P.S. we stole a lot of the code from [raccoon.pictures](https://raccoon.pictures), and theres some code from that website still in the code. thanks for the code 
