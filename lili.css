@@ -1,0 +1,34 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+	font-family: comic sans ms;
+	text-align: center;
+	font-size: 50px;
+}
+
+#raccoonpictures { width: 600px; height: auto; padding: 4px; }
+#raccoonpictures:active { transform: rotate3d(39846, 2.0, 3.0, 900deg);  ; transition-duration: 20s }
+
+#banner { text-align: left; border-left: white; border-width: 2px border-color: white; border-style: solid; padding-left: 2px;  }
+
+#raccoonpictures { width: 600px; height: auto; padding: 4px; }
+#raccoonpictures:active { transform: rotate3d(39846, 2.0, 3.0, 900deg);  ; transition-duration: 20s }
+
+#sgfgbnfh { }
+
+#helfme { width: 700px; height: auto; border-top: white; border-width: 2px; padding-top: 2px; border-bottom: white; padding-bottom: 2px; border-style: solid }
+
+
+
+
+#cat { float: right; position: absolute; margin-left: 70%; filter: blur(100px); opacity: 0; transition-duration: 2s  }
+#cat:hover { filter: blur(0px); opacity: 1; transition-duration: 1s }
+
+p { font-family: Arial, Helvetica, sans-serif; color: white; font-size: 13px }
+
+a { font-family: Arial, Helvetica, sans-serif; color: white; font-size: 13px }
