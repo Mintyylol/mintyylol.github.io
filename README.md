@@ -3,6 +3,7 @@
 Picks randomly from a set of over 300 Bunny images.
 
 all of the coding was done by [PixelMan572](https://github.com/PixelMan572)
+
 image curation done by meee :3c
 
 i hope you enjoy the website as much as i do c:
