@@ -7,8 +7,13 @@ body {
   }
   
   table {
+    table-layout: fixed;
+    height: 50%;
     width: 100%;
-    table-layout: fixed; /* Fixed table layout for equal column widths */
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0; 
     border-collapse: collapse;
   }
   
@@ -28,4 +33,3 @@ body {
       display: block;
     }
   }
-  
