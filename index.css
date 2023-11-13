@@ -1,0 +1,87 @@
+body {
+  font-family: Montserrat, sans-serif;
+
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0.34;
+    scale: 0.94;
+    -webkit-filter: grayscale(50%);
+    -webkit-filter: blur(7.6px);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    -webkit-filter: grayscale(0%);
+    -webkit-filter: blur(0px);
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.i-stole-this-from-stack-overflow {
+  width: 400px;
+  margin: 5px;
+  text-align: center;
+  font-size: 40px;
+}
+header {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+#bunnyc {
+  text-align: center;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: lightgray;
+}
+/* visited link */
+a:visited {
+  color: #a1f3ff;
+}
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: underline solid Currentcolor;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 33, 38, 1) 0%,
+    rgba(58, 64, 74, 1) 100%
+  );
+}
