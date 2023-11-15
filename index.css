@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-
-root: {
-  --c1: (#181D25);
-  --c2: (#1A2029);
-  --c3: (#2B333D);
-  --c4: (#545378);
-  --c5: (#7F74B5);
-  --c6: (#88ABEB);
-}
-
-
 .mabove {
   /* box style :3 */
   font-family: "Open Sans", sans-serif; 
