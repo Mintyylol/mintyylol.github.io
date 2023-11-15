@@ -1,87 +1,150 @@
-body {
-  font-family: Montserrat, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+
+root: {
+  --c1: (#181D25);
+  --c2: (#1A2029);
+  --c3: (#2B333D);
+  --c4: (#545378);
+  --c5: (#7F74B5);
+  --c6: (#88ABEB);
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0.34;
-    scale: 0.94;
-    -webkit-filter: grayscale(50%);
-    -webkit-filter: blur(7.6px);
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-    -webkit-filter: grayscale(0%);
-    -webkit-filter: blur(0px);
-  }
-}
 
-.links {
+.mabove {
+  /* box style :3 */
+  font-family: "Open Sans", sans-serif; 
+  font-style: italic;
+  color: #88ABEB;  
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 500px;
+  line-height: 1.25em; 
+  background: #232A33; 
+  border: solid 1px #88ABEB; 
+  /* centering, mostly */
+  padding: 15px 30px; 
+  height: 45%;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  top: 100; left: 0; bottom: 0; right: 0;
+  /* cool filters but nobody cares */
+  filter: drop-shadow(0px 0px 8px #0D1015);
+
+    /* push up animation start */
+  animation-name: cwebs;
+  animation-duration: 1.7s;
+  animation-timing-function: cubic-bezier(.02,.62,.39,.97);
 }
-.i-stole-this-from-stack-overflow {
-  width: 400px;
-  margin: 5px;
-  text-align: center;
-  font-size: 40px;
-}
-header {
-  color: white;
-  font-size: 12px;
-  text-align: center;
-  padding-top: 15px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-#bunnyc {
-  text-align: center;
-  color: white;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+@keyframes cwebs {
+  0%  {opacity: 0; top:200px;}
+  14% {opacity: 0; top:200px;}
+  100%{opacity: 1; top:0px;}
+    /* push up animation end */
 }
 
-main {
-  text-align: center;
+.main {  
+  display: flex;
+  align-items: center;
+  line-height: 1.25em; 
+  background: #232A33; 
+  border: solid 1px #88ABEB; 
+  padding: 30px 30px; 
+  height: 25%;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  transform: translateY(10px);
+  /* cool filters but nobody cares */
+  filter: drop-shadow(0px 0px 8px #0D1015);
+  backdrop-filter: blur(10px);
+  
+  /* push up animation start */
+  animation-name: mainp;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(.02,.62,.39,.97);
 }
+@keyframes mainp {
+  0%  {opacity:0; top:200px;}
+  7%  {opacity:0; top:200px;}
+  100%{opacity:1; top:0px;}
+    /* push up animation end */
+}
+.munder {
+  display: flex;
+  align-items: center;
+  line-height: 1.25em; 
+  background: #232A33; 
+  border: solid 1px #88ABEB; 
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  padding: 30px 30px; 
+  height: 25%;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  transform: translateY(20px);
+  /* cool filters but nobody cares */
+  filter: drop-shadow(0px 0px 8px #0D1015);
+  backdrop-filter: blur(10px);
+  
+  /* push up animation start */
+  animation-name: munder;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(.02,.62,.39,.97);
+}
+@keyframes munder {
+  0%  {opacity: 0; top: 200px;}
+  100%{opacity: 1; top: 0px;}
+    /* push up animation end */
+  }
+
+  
+  
+
+.text {
+  font-size: 24px;
+  align-items: center;
+  padding: 30px 12px;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+
+/* link hover shenanigans */
+
+
 a {
   text-decoration: none;
 }
 /* unvisited link */
 a:link {
-  color: lightgray;
+  color: #88ABEB;
+  transition: 0.16s;
 }
 /* visited link */
 a:visited {
-  color: #a1f3ff;
+  color: #88ABEB;
 }
 /* mouse over link */
 a:hover {
   color: white;
+  transition: 0.16s;
   text-decoration: underline solid Currentcolor;
 }
 /* selected link */
 a:active {
-  color: blue;
+  color: white;
+}
+
+
+
+main {
+  margin: auto;
 }
 
 html {
-  min-height: 100%;
-  position: relative;
-  background: linear-gradient(
-    180deg,
-    rgba(30, 33, 38, 1) 0%,
-    rgba(58, 64, 74, 1) 100%
-  );
+  background: #181D25;
 }
