@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
+.mabove:hover {background: #2B333D;}
 .mabove {
   /* box style :3 */
   font-family: "Open Sans", sans-serif; 
@@ -19,7 +20,7 @@
   top: 100; left: 0; bottom: 0; right: 0;
   /* cool filters but nobody cares */
   filter: drop-shadow(0px 0px 8px #0D1015);
-
+  transition: 0.3s;
     /* push up animation start */
   animation-name: cwebs;
   animation-duration: 1.7s;
@@ -31,7 +32,7 @@
   100%{opacity: 1; top:0px;}
     /* push up animation end */
 }
-
+.main:hover {background: #2B333D;}
 .main {  
   display: flex;
   align-items: center;
@@ -48,29 +49,32 @@
   /* cool filters but nobody cares */
   filter: drop-shadow(0px 0px 8px #0D1015);
   backdrop-filter: blur(10px);
+  transition: 0.3s;
   
   /* push up animation start */
   animation-name: mainp;
   animation-duration: 1.5s;
-  animation-timing-function: cubic-bezier(.02,.62,.39,.97);
-}
+  animation-timing-function: cubic-bezier(.02,.62,.39,.97);}
 @keyframes mainp {
   0%  {opacity:0; top:200px;}
   7%  {opacity:0; top:200px;}
   100%{opacity:1; top:0px;}
     /* push up animation end */
 }
+
+.munder:hover {background: #2B333D;}
 .munder {
   display: flex;
   align-items: center;
   line-height: 1.25em; 
+  font-size: 18px;
   background: #232A33; 
   border: solid 1px #88ABEB; 
   font-family: "Open Sans", sans-serif;
   font-style: italic;
-  padding: 30px 30px; 
+  padding: 30px 44px; 
   height: 25%;
-  width: 40%;
+  width: 38%;
   margin: auto;
   position: relative;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -78,6 +82,7 @@
   /* cool filters but nobody cares */
   filter: drop-shadow(0px 0px 8px #0D1015);
   backdrop-filter: blur(10px);
+  transition: 0.3s;
   
   /* push up animation start */
   animation-name: munder;
