@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+root: {
+  --c1d:13, 16, 21, 1; /*#0D1015*/
+  --c1: 24, 29, 37, 1; /*#181D25*/
+  --c2: 26, 32, 41, 1; /*#1A2029*/
+  --c3d:35, 42, 51, 1; /*#2B333D*/
+  --c3: 43, 51, 61, 1; /*#2B333D*/
+  --c4: 84, 83, 120,1; /*#545378*/
+  --c5: 127,116,181,1; /*#7F74B5*/ 
+  --c6: 136,171,235,1; /*#88ABEB*/
+  --c6l:196,213,245,1; /*#C4D5F5*/
+}
 
-.mabove:hover {background: #2B333D;}
+.mabove:hover {
+  background: #2B333D;
+  color: #C4D5F5;
+  border: solid 1px #C4D5F5; 
+  filter: drop-shadow(0px 0px 16px #0D1015);
+  padding: 18px 30px;
+}
 .mabove {
   /* box style :3 */
   font-family: "Open Sans", sans-serif; 
@@ -15,6 +32,7 @@
   padding: 15px 30px; 
   height: 45%;
   width: 40%;
+  max-width: 600px;
   margin: auto;
   position: relative;
   top: 100; left: 0; bottom: 0; right: 0;
@@ -32,7 +50,14 @@
   100%{opacity: 1; top:0px;}
     /* push up animation end */
 }
-.main:hover {background: #2B333D;}
+
+.main:hover {
+  background: #2B333D;
+  filter: drop-shadow(0px 0px 18px #0D1015);
+  border: solid 1px #C4D5F5;
+  color: #ffffff;
+  padding: 34px 30px;
+}
 .main {  
   display: flex;
   align-items: center;
@@ -42,6 +67,7 @@
   padding: 30px 30px; 
   height: 25%;
   width: 40%;
+  max-width: 600px;
   margin: auto;
   position: relative;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -62,8 +88,14 @@
     /* push up animation end */
 }
 
-.munder:hover {background: #2B333D;}
+.munder:hover {
+  background: #2B333D;
+  filter: drop-shadow(0px 0px 16px #0D1015);
+  border: solid 1px #C4D5F5;
+  padding: 34px 30px;
+}
 .munder {
+  position: flex;
   display: flex;
   align-items: center;
   line-height: 1.25em; 
@@ -72,9 +104,10 @@
   border: solid 1px #88ABEB; 
   font-family: "Open Sans", sans-serif;
   font-style: italic;
-  padding: 30px 44px; 
+  padding: 30px 30px; 
   height: 25%;
-  width: 38%;
+  width: 40%;
+  max-width: 600px;
   margin: auto;
   position: relative;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -95,50 +128,44 @@
     /* push up animation end */
   }
 
-  
-  
+/* link hover shenanigans */
+a {
+  transition: 0.16s;
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {color: #88ABEB;}
+/* visited link */
+a:visited {color: #88ABEB;}
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: underline solid Currentcolor;
+}
+/* selected link */
+a:active {color: white;}
 
+main {margin: auto;}
+html {
+  background: #181D25;
+  transform: translateY(30%);
+}
 .text {
   font-size: 24px;
   align-items: center;
   padding: 30px 12px;
   font-family: "Open Sans", sans-serif;
-  
 }
 
-
-/* link hover shenanigans */
-
-
-a {
-  text-decoration: none;
+.nava {
+  text-align: center;
+  width: 33.3%;
 }
-/* unvisited link */
-a:link {
-  color: #88ABEB;
-  transition: 0.16s;
+.navb {
+  text-align: center;
+  width: 33.3%;
 }
-/* visited link */
-a:visited {
-  color: #88ABEB;
-}
-/* mouse over link */
-a:hover {
-  color: white;
-  transition: 0.16s;
-  text-decoration: underline solid Currentcolor;
-}
-/* selected link */
-a:active {
-  color: white;
-}
-
-
-
-main {
-  margin: auto;
-}
-
-html {
-  background: #181D25;
+.navc {
+  text-align: center;
+  width: 33.3%;
 }
